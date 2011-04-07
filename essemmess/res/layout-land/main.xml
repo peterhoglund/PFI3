@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:background="@drawable/bg" 
+    android:orientation="vertical" 
+    android:padding="10px">
+    
+    <TextView 
+	    android:text="Meddelande" 
+	    android:id="@+id/textView1" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:textColor="#FFFFFF" 
+	    android:textSize="20dip">
+    </TextView>
+    
+    <EditText 
+	    android:layout_width="fill_parent" 
+	    android:id="@+id/meddelandeTextView" 
+	    android:layout_height="120px" 
+	    android:gravity="top" 
+	    android:layout_marginBottom="10px">
+    </EditText>
+    
+    <TextView android:text="Tags" android:layout_width="wrap_content" android:paddingBottom="5px" android:layout_height="wrap_content" android:id="@+id/TextView01" android:textColor="#FFFFFF" android:textSize="20dip"></TextView>
+    
+    <TableLayout 
+	    android:id="@+id/tableLayout1" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:stretchColumns="*">
+	    <TableRow>  
+	        <EditText 
+		        android:layout_marginBottom="10px" 
+		        android:id="@+id/tagsTextView" 
+		        android:layout_height="wrap_content" 
+		        android:layout_width="150dip"
+		        android:maxLines="1">
+	        </EditText>
+	        <Button android:textSize="20dip" 
+		        android:text="Skicka" 
+		        android:id="@+id/knappSkicka" 
+		        android:layout_height="wrap_content">
+	        </Button>
+	   </TableRow>
+    </TableLayout>
+
+</LinearLayout>
